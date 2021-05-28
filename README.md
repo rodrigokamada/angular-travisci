@@ -62,3 +62,55 @@ CREATE angular-travisci/src/app/app.component.spec.ts (1087 bytes)
 CREATE angular-travisci/src/app/app.component.ts (221 bytes)
 ✔ Packages installed successfully.
 ```
+
+**2.** Create the `.travis.yml` file.
+
+```shell
+touch .travis.yml
+```
+
+**3.** Configure the `.travis.yml` file with the content below.
+
+```yaml
+notifications:
+  email:
+    recipients:
+      - rodrigo@kamada.com.br
+
+language: node_js
+
+node_js:
+  - 14
+
+before_script:
+  - npm install
+
+script:
+  - npm run test:headless
+
+before_deploy:
+  - npm run build:prod
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/angular-travisci
+  on:
+    branch: master
+```
+
+**4.** Change the `package.json` file and add the scripts below.
+
+```json
+  "build:prod": "ng build --prod --base-href https://rodrigokamada.github.io/angular-travisci/",
+  "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
+```
+
+**5.** Run the application with the command:
+
+```shell
+npm start
+```
+
+
