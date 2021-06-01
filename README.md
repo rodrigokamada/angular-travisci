@@ -123,7 +123,7 @@ npm start
 
 **6.** Create the account on the GitHub.
 
-**6.1.** Access the site [https://github.com/](https://github.com/) and click on the button **Sign up**.
+**6.1.** Access the site [https://github.com/](https://github.com/) and click on the button *Sign up*.
 
 ![GitHub Initial page](docs/images/github-step1.png)
 
@@ -131,6 +131,29 @@ npm start
 
 ![GitHub Sign up](docs/images/github-step2.png)
 
+**6.3.** Click on the menu with the avatar and click on the menu *Settings*.
 
+![GitHub Menu avatar](docs/images/github-step3.png)
+
+**6.4.** Click on the menu *Developer settings*.
+
+![GitHub Settings](docs/images/github-step4.png)
+
+**6.5.** Click on the menu *Personal access tokens*.
+
+![GitHub Developer settings](docs/images/github-step5.png)
+
+**6.6.** Click on the button *Generate new token*.
+
+![GitHub Personal access tokens](docs/images/github-step6.png)
+
+**6.7.** Fill in the field *Note*, select the option *repo* and click on the button *Create token*.
+
+![GitHub Generate new token](docs/images/github-step7.png)
+
+**6.8.** Copy the generated token, which in my case is *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*.
+Copy the generated token and in my case the token 123345345 was generated because it will be used in Travis CI.
+
+![GitHub Create token](docs/images/github-step8.png)
 
 
