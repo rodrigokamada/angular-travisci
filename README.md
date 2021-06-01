@@ -156,4 +156,24 @@ Copy the generated token and in my case the token 123345345 was generated becaus
 
 ![GitHub Create token](docs/images/github-step8.png)
 
+**7.** Create the account on the Travis CI.
 
+**7.1.** Access the site [https://travis-ci.com/](https://travis-ci.com/) and click on the button *Sign up*.
+
+![Travis CI Initial page](docs/images/travisci-step1.png)
+
+**7.2.** Click on the button *SIGN IN WITH GITHUB* to sign in with GitHub account.
+
+![Travis CI Sign up](docs/images/travisci-step2.png)
+
+**7.3.** If Travis CI requests permission to list the repositories, accept the permission. Click on the repository link *angular-travisci*.
+
+![Travis CI List repositories](docs/images/travisci-step3.png)
+
+**7.4.** Click on the menu *More options* and click on the menu *Settings*.
+
+![Travis CI Repository](docs/images/travisci-step4.png)
+
+**7.5.** Fill in the fields *NAME* with the value *GITHUB_TOKEN*, *VALUE* with the value of your token generated on GitHub and click on the button *Add*.
+
+![Travis Settings](docs/images/travisci-step5.png)
