@@ -107,10 +107,26 @@ deploy:
   "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
 ```
 
-**5.** Run the application with the command:
+**5.** Change the `src/app/app.component.spec.ts` file and remove the tests `should have as title 'angular-travisci'` and `should render title`.
+
+**6.** Run the test with the command:
+
+```shell
+npm run test:headless
+```
+
+**6.** Run the application with the command:
 
 ```shell
 npm start
 ```
+
+**6.** Create the account on the GitHub.
+
+**6.1.** Access the site [https://github.com/](https://github.com/) and click on the button **Sign up**.
+
+
+
+
 
 
