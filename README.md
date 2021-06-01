@@ -22,7 +22,7 @@ Before you start, you need to install and configure the tools:
 * [git](https://git-scm.com/)
 * [Node.js and npm](https://nodejs.org/)
 * [Angular CLI](https://angular.io/cli)
-* IDE
+* IDE (e.g. [Visual Studio Code](https://code.visualstudio.com/))
 
 
 
@@ -125,7 +125,11 @@ npm start
 
 **6.1.** Access the site [https://github.com/](https://github.com/) and click on the button **Sign up**.
 
+![GitHub Initial page](docs/images/github-step1.png)
 
+**6.2.** Fill in the fields *Username*, *Email address*, *Password*, click on the button *Verify* to solve the puzzle and click on the button *Create account*.
+
+![GitHub Sign up](docs/images/github-step2.png)
 
 
 
