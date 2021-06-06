@@ -29,7 +29,90 @@ Before you start, you need to install and configure the tools:
 ## Getting started
 
 
-**1.** Create an application with the Angular base structure using the `@angular/cli` com with the route file and the SCSS style format.
+### Create and configure the account on the GitHub.
+
+
+**1.** Let's create the account. Access the site [https://github.com/](https://github.com/) and click on the button *Sign up*.
+
+![GitHub Initial page](docs/images/github-step1.png)
+
+**2.** Fill in the fields *Username*, *Email address*, *Password*, click on the button *Verify* to solve the challenge and click on the button *Create account*.
+
+![GitHub Sign up](docs/images/github-step2.png)
+
+**3.** Let's generate the token that will be used in Travis CI. Click on the menu with the avatar and click on the menu *Settings*.
+
+![GitHub Menu Settings](docs/images/github-step3.png)
+
+**4.** Click on the menu *Developer settings*.
+
+![GitHub Settings](docs/images/github-step4.png)
+
+**5.** Click on the menu *Personal access tokens*.
+
+![GitHub Developer settings](docs/images/github-step5.png)
+
+**6.** Click on the button *Generate new token*.
+
+![GitHub Personal access tokens](docs/images/github-step6.png)
+
+**7.** Fill in the field *Note*, select the option *repo* and click on the button *Create token*.
+
+![GitHub Generate new token](docs/images/github-step7.png)
+
+**8.** Copy the generated token and, in my case, the *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* token was generated because this token will be configured in Travis CI.
+
+![GitHub Create token](docs/images/github-step8.png)
+
+**9.** Let's create the repository. Click on the menu with the avatar and click on the menu *Your repositories*.
+
+![GitHub Menu Your repositories](docs/images/github-step9.png)
+
+**10.** Click on the button *New*.
+
+![GitHub New repository](docs/images/github-step10.png)
+
+**11.** Fill in the field *Repository bane* and click on the button *Create repository*.
+
+![GitHub Create repository](docs/images/github-step11.png)
+
+**12.** Ready! Account created, token generated and repository created.
+
+![GitHub Repository created](docs/images/github-step12.png)
+
+
+### Create and configure the account on the Travis CI.
+
+
+**1.** Let's create the account. Access the site [https://travis-ci.com/](https://travis-ci.com/) and click on the button *Sign up*.
+
+![Travis CI Initial page](docs/images/travisci-step1.png)
+
+**2.** Click on the button *SIGN IN WITH GITHUB* to sign in with GitHub account.
+
+![Travis CI Sign up](docs/images/travisci-step2.png)
+
+**3.** If Travis CI requests permission to list the GitHub repositories, accept the request. Click on the repository link *angular-travisci*.
+
+![Travis CI List repositories](docs/images/travisci-step3.png)
+
+**4.** Let's set up the GitHub access token. Click on the menu *More options* and click on the menu *Settings*.
+
+![Travis CI Repository](docs/images/travisci-step4.png)
+
+**5.** Fill in the fields *NAME* with the value *GITHUB_TOKEN*, *VALUE* with the value of your token generated on GitHub and click on the button *Add*.
+
+![Travis CI Settings](docs/images/travisci-step5.png)
+
+**6.** Ready! Account created, token generated and repository created.
+
+![Travis CI Token configured](docs/images/travisci-step6.png)
+
+
+### Create the Angular application.
+
+
+**1.** Let's create the application with the Angular base structure using the `@angular/cli` with the route file and the SCSS style format.
 
 ```shell
 ng new angular-travisci
@@ -72,11 +155,6 @@ touch .travis.yml
 **3.** Configure the `.travis.yml` file with the content below.
 
 ```yaml
-notifications:
-  email:
-    recipients:
-      - rodrigo@kamada.com.br
-
 language: node_js
 
 node_js:
@@ -115,65 +193,8 @@ deploy:
 npm run test:headless
 ```
 
-**6.** Run the application with the command:
+**7.** Run the application with the command:
 
 ```shell
 npm start
 ```
-
-**6.** Create the account on the GitHub.
-
-**6.1.** Access the site [https://github.com/](https://github.com/) and click on the button *Sign up*.
-
-![GitHub Initial page](docs/images/github-step1.png)
-
-**6.2.** Fill in the fields *Username*, *Email address*, *Password*, click on the button *Verify* to solve the puzzle and click on the button *Create account*.
-
-![GitHub Sign up](docs/images/github-step2.png)
-
-**6.3.** Click on the menu with the avatar and click on the menu *Settings*.
-
-![GitHub Menu avatar](docs/images/github-step3.png)
-
-**6.4.** Click on the menu *Developer settings*.
-
-![GitHub Settings](docs/images/github-step4.png)
-
-**6.5.** Click on the menu *Personal access tokens*.
-
-![GitHub Developer settings](docs/images/github-step5.png)
-
-**6.6.** Click on the button *Generate new token*.
-
-![GitHub Personal access tokens](docs/images/github-step6.png)
-
-**6.7.** Fill in the field *Note*, select the option *repo* and click on the button *Create token*.
-
-![GitHub Generate new token](docs/images/github-step7.png)
-
-**6.8.** Copy the generated token, which in my case is *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*.
-Copy the generated token and in my case the token 123345345 was generated because it will be used in Travis CI.
-
-![GitHub Create token](docs/images/github-step8.png)
-
-**7.** Create the account on the Travis CI.
-
-**7.1.** Access the site [https://travis-ci.com/](https://travis-ci.com/) and click on the button *Sign up*.
-
-![Travis CI Initial page](docs/images/travisci-step1.png)
-
-**7.2.** Click on the button *SIGN IN WITH GITHUB* to sign in with GitHub account.
-
-![Travis CI Sign up](docs/images/travisci-step2.png)
-
-**7.3.** If Travis CI requests permission to list the repositories, accept the permission. Click on the repository link *angular-travisci*.
-
-![Travis CI List repositories](docs/images/travisci-step3.png)
-
-**7.4.** Click on the menu *More options* and click on the menu *Settings*.
-
-![Travis CI Repository](docs/images/travisci-step4.png)
-
-**7.5.** Fill in the fields *NAME* with the value *GITHUB_TOKEN*, *VALUE* with the value of your token generated on GitHub and click on the button *Add*.
-
-![Travis Settings](docs/images/travisci-step5.png)
