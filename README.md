@@ -178,7 +178,7 @@ deploy:
     branch: master
 ```
 
-**4.** Change the `package.json` file and add the scripts below.
+**4.** Change the `package.json` file and add the scripts below. Replace the `rodrigokamada` value with your GitHub username.
 
 ```json
   "build:prod": "ng build --prod --base-href https://rodrigokamada.github.io/angular-travisci/",
@@ -187,14 +187,80 @@ deploy:
 
 **5.** Change the `src/app/app.component.spec.ts` file and remove the tests `should have as title 'angular-travisci'` and `should render title`.
 
-**6.** Run the test with the command:
+**6.** Run the test with the command below.
 
 ```shell
 npm run test:headless
+
+> angular-travisci@1.0.0 test:headless
+> ng test --watch=false --browsers=ChromeHeadless
+
+⠋ Generating browser application bundles (phase: setup)...Compiling @angular/core/testing : es2015 as esm2015
+Compiling @angular/platform-browser/testing : es2015 as esm2015
+Compiling @angular/compiler/testing : es2015 as esm2015
+Compiling @angular/common/testing : es2015 as esm2015
+Compiling @angular/router/testing : es2015 as esm2015
+Compiling @angular/platform-browser-dynamic/testing : es2015 as esm2015
+⠹ Generating browser application bundles (phase: building)...06 06 2021 21:22:49.870:INFO [karma-server]: Karma v6.3.3 server started at http://localhost:9876/
+06 06 2021 21:22:49.872:INFO [launcher]: Launching browsers ChromeHeadless with concurrency unlimited
+06 06 2021 21:22:49.875:INFO [launcher]: Starting browser ChromeHeadless
+✔ Browser application bundle generation complete.
+06 06 2021 21:22:54.562:INFO [Chrome Headless 91.0.4472.77 (Linux x86_64)]: Connected on socket SvdczBWd9ENbliBLAAAB with id 49624818
+Chrome Headless 91.0.4472.77 (Linux x86_64): Executed 1 of 1 SUCCESS (0.059 secs / 0.036 secs)
+TOTAL: 1 SUCCESS
 ```
 
-**7.** Run the application with the command:
+**7.** Run the application with the command below. Access the URL `http://localhost:4200/` and check if the application is working.
 
 ```shell
 npm start
+
+> angular-travisci@1.0.0 start
+> ng serve
+
+✔ Browser application bundle generation complete.
+
+Initial Chunk Files | Names         |      Size
+vendor.js           | vendor        |   2.38 MB
+polyfills.js        | polyfills     | 128.56 kB
+main.js             | main          |   8.93 kB
+runtime.js          | runtime       |   6.59 kB
+styles.css          | styles        | 118 bytes
+
+                    | Initial Total |   2.52 MB
+
+Build at: 2021-06-07T00:23:57.046Z - Hash: 0ddc925fb2029ab1452c - Time: 8963ms
+
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+
+✔ Compiled successfully.
 ```
+
+**8.** Build the application with the command below.
+
+```shell
+npm run build:prod
+
+> angular-travisci@1.0.0 build:prod
+> ng build --prod --base-href https://rodrigokamada.github.io/angular-travisci/
+
+Option "--prod" is deprecated: No need to use this option as this builder defaults to configuration "production".
+✔ Browser application bundle generation complete.
+✔ Copying assets complete.
+✔ Index html generation complete.
+
+Initial Chunk Files               | Names         |      Size
+main.8e694e7aafc3a1a42dae.js      | main          | 183.39 kB
+polyfills.ced499a8795c0b89925d.js | polyfills     |  35.96 kB
+runtime.0fbd4bc4e284e2219405.js   | runtime       |   1.01 kB
+styles.31d6cfe0d16ae931b73c.css   | styles        |   0 bytes
+
+                                  | Initial Total | 220.36 kB
+
+Build at: 2021-06-07T00:32:55.680Z - Hash: 53d59484d4126ac206fa - Time: 27491ms
+```
+
+**9.** Syncronize the application on the GitHub repository that was created.
+
+**10.** Ready! After synchronizing the application on the GitHub repository, Travis CI build the application and synchronize on the branch `gh-pages`. Access the URL `https://rodrigokamada.github.io/angular-travisci/` and check if the application is working. Replace the `rodrigokamada` value with your GitHub username.
