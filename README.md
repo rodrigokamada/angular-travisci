@@ -76,7 +76,7 @@ Before you start, you need to install and configure the tools:
 
 ![GitHub - Create repository](docs/images/github-step11.png)
 
-**12.** Ready! Account created, token generated and repository created.
+**12.** Ready! Account created, token generated and repository [`https://github.com/rodrigokamada/angular-travisci`](https://github.com/rodrigokamada/angular-travisci) created.
 
 ![GitHub - Repository created](docs/images/github-step12.png)
 
@@ -104,9 +104,9 @@ Before you start, you need to install and configure the tools:
 
 ![Travis CI - Settings](docs/images/travisci-step5.png)
 
-**6.** Ready! Account created, token generated and repository [`https://github.com/rodrigokamada/angular-travisci`](https://github.com/rodrigokamada/angular-travisci) created.
+**6.** Ready! Account created and repository configured.
 
-![Travis CI - Token configured](docs/images/travisci-step6.png)
+![Travis CI - Repository configured](docs/images/travisci-step6.png)
 
 
 ### Create the Angular application.
