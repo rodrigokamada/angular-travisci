@@ -104,7 +104,7 @@ Before you start, you need to install and configure the tools:
 
 ![Travis CI - Settings](docs/images/travisci-step5.png)
 
-**6.** Ready! Account created, token generated and repository created.
+**6.** Ready! Account created, token generated and repository [`https://github.com/rodrigokamada/angular-travisci`](https://github.com/rodrigokamada/angular-travisci) created.
 
 ![Travis CI - Token configured](docs/images/travisci-step6.png)
 
