@@ -32,7 +32,7 @@ Before you start, you need to install and configure the tools:
 ## Getting started
 
 
-### Create and configure the account on the GitHub.
+### Create and configure the account on the GitHub
 
 
 **1.** Let's create the account. Access the site [https://github.com/](https://github.com/) and click on the button *Sign up*.
@@ -84,7 +84,7 @@ Before you start, you need to install and configure the tools:
 ![GitHub - Repository created](docs/images/github-step12.png)
 
 
-### Create and configure the account on the Travis CI.
+### Create and configure the account on the Travis CI
 
 
 **1.** Let's create the account. Access the site [https://travis-ci.com/](https://travis-ci.com/) and click on the button *Sign up*.
@@ -112,7 +112,7 @@ Before you start, you need to install and configure the tools:
 ![Travis CI - Repository configured](docs/images/travisci-step6.png)
 
 
-### Create the Angular application.
+### Create the Angular application
 
 
 **1.** Let's create the application with the Angular base structure using the `@angular/cli` with the route file and the SCSS style format.
