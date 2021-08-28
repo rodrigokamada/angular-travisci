@@ -63,7 +63,7 @@ Before you start, you need to install and configure the tools:
 
 ![GitHub - Generate new token](docs/images/github-step7.png)
 
-**8.** Copy the generated token and, in my case, the *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* token was generated because this token will be configured in Travis CI.
+**8.** Copy the generated token and, in my case, the `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` token was generated because this token will be configured in Travis CI.
 
 ![GitHub - Create token](docs/images/github-step8.png)
 
