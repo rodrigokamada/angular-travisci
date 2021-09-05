@@ -158,10 +158,15 @@ touch .travis.yml
 **3.** Configure the `.travis.yml` file with the content below.
 
 ```yaml
+notifications:
+  email:
+    recipients:
+      - rodrigo@kamada.com.br
+
 language: node_js
 
 node_js:
-  - 14
+  - 16
 
 before_script:
   - npm install
@@ -254,16 +259,38 @@ Option "--prod" is deprecated: No need to use this option as this builder defaul
 ✔ Index html generation complete.
 
 Initial Chunk Files               | Names         |      Size
-main.8e694e7aafc3a1a42dae.js      | main          | 183.39 kB
-polyfills.ced499a8795c0b89925d.js | polyfills     |  35.96 kB
-runtime.0fbd4bc4e284e2219405.js   | runtime       |   1.01 kB
+main.4284c613df8796ad96ac.js      | main          | 185.26 kB
+polyfills.6e957dc8e1c39c9b7c1a.js | polyfills     |  36.21 kB
+runtime.fde742341677e42220b5.js   | runtime       |   1.04 kB
 styles.31d6cfe0d16ae931b73c.css   | styles        |   0 bytes
 
-                                  | Initial Total | 220.36 kB
+                                  | Initial Total | 222.50 kB
 
-Build at: 2021-06-07T00:32:55.680Z - Hash: 53d59484d4126ac206fa - Time: 27491ms
+Build at: 2021-09-05T22:42:19.525Z - Hash: 83bfffc079b083727ca4 - Time: 26030ms
 ```
 
 **9.** Syncronize the application on the GitHub repository that was created.
 
 **10.** Ready! After synchronizing the application on the GitHub repository, Travis CI build the application and synchronize on the branch `gh-pages`. Access the URL `https://rodrigokamada.github.io/angular-travisci/` and check if the application is working. Replace the `rodrigokamada` value with your GitHub username.
+
+
+
+## Cloning the application
+
+**1.** Clone the repository.
+
+```shell
+git clone git@github.com:rodrigokamada/angular-travisci.git
+```
+
+**2.** Install the dependencies.
+
+```shell
+npm ci
+```
+
+**3.** Run the application.
+
+```shell
+npm start
+```
