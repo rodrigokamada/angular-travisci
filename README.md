@@ -1,7 +1,7 @@
 # Angular Travis CI
 
 
-Application example built with [Angular 12](https://angular.io/) and hosted on [GitHub Pages](https://pages.github.com/) using [Travis CI](https://www.travis-ci.com/).
+Application example built with [Angular 13](https://angular.io/) and hosted on [GitHub Pages](https://pages.github.com/) using [Travis CI](https://www.travis-ci.com/).
 
 This tutorial was posted on my [blog](https://rodrigo.kamada.com.br/blog/hospedando-uma-aplicacao-angular-no-github-pages-usando-o-travis-ci) in portuguese and on the [DEV Community](https://dev.to/rodrigokamada/hosting-an-angular-application-on-github-pages-using-travis-ci-5dip) in english.
 
