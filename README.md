@@ -37,51 +37,51 @@ Before you start, you need to install and configure the tools:
 
 **1.** Let's create the account. Access the site [https://github.com/](https://github.com/) and click on the button *Sign up*.
 
-![GitHub - Initial page](docs/images/github-step1.png)
+![GitHub - Initial page](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step1_wrlahc.png)
 
 **2.** Fill in the fields *Username*, *Email address*, *Password*, click on the button *Verify* to solve the challenge and click on the button *Create account*.
 
-![GitHub - Sign up](docs/images/github-step2.png)
+![GitHub - Sign up](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step2_ircgb5.png)
 
 **3.** Let's generate the token that will be used in Travis CI. Click on the menu with the avatar and click on the menu *Settings*.
 
-![GitHub - Menu Settings](docs/images/github-step3.png)
+![GitHub - Menu Settings](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step3_ubydrf.png)
 
 **4.** Click on the menu *Developer settings*.
 
-![GitHub - Settings](docs/images/github-step4.png)
+![GitHub - Settings](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step4_qpegbx.png)
 
 **5.** Click on the menu *Personal access tokens*.
 
-![GitHub - Developer settings](docs/images/github-step5.png)
+![GitHub - Developer settings](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step5_ppsybd.png)
 
 **6.** Click on the button *Generate new token*.
 
-![GitHub - Personal access tokens](docs/images/github-step6.png)
+![GitHub - Personal access tokens](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step6_zf3yfv.png)
 
 **7.** Fill in the field *Note*, select the option *repo* and click on the button *Create token*.
 
-![GitHub - Generate new token](docs/images/github-step7.png)
+![GitHub - Generate new token](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step7_ppuewn.png)
 
 **8.** Copy the generated token and, in my case, the `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` token was generated because this token will be configured in Travis CI.
 
-![GitHub - Create token](docs/images/github-step8.png)
+![GitHub - Create token](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step8_ym5hoy.png)
 
 **9.** Let's create the repository. Click on the menu with the avatar and click on the menu *Your repositories*.
 
-![GitHub - Menu Your repositories](docs/images/github-step9.png)
+![GitHub - Menu Your repositories](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step9_fbq2yd.png)
 
 **10.** Click on the button *New*.
 
-![GitHub - New repository](docs/images/github-step10.png)
+![GitHub - New repository](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step10_hae9dv.png)
 
 **11.** Fill in the field *Repository bane* and click on the button *Create repository*.
 
-![GitHub - Create repository](docs/images/github-step11.png)
+![GitHub - Create repository](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step11_iev4kz.png)
 
 **12.** Ready! Account created, token generated and repository [`https://github.com/rodrigokamada/angular-travisci`](https://github.com/rodrigokamada/angular-travisci) created.
 
-![GitHub - Repository created](docs/images/github-step12.png)
+![GitHub - Repository created](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/github-step12_trbwfa.png)
 
 
 ### Create and configure the account on the Travis CI
@@ -89,27 +89,27 @@ Before you start, you need to install and configure the tools:
 
 **1.** Let's create the account. Access the site [https://travis-ci.com/](https://travis-ci.com/) and click on the button *Sign up*.
 
-![Travis CI - Initial page](docs/images/travisci-step1.png)
+![Travis CI - Initial page](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step1_xgghwn.png)
 
 **2.** Click on the button *SIGN IN WITH GITHUB* to sign in with GitHub account.
 
-![Travis CI - Sign up](docs/images/travisci-step2.png)
+![Travis CI - Sign up](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step2_uymq31.png)
 
 **3.** If Travis CI requests permission to list the GitHub repositories, accept the request. Click on the repository link *angular-travisci*.
 
-![Travis CI - List repositories](docs/images/travisci-step3.png)
+![Travis CI - List repositories](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step3_rwt2jn.png)
 
 **4.** Let's set up the GitHub access token. Click on the menu *More options* and click on the menu *Settings*.
 
-![Travis CI - Repository](docs/images/travisci-step4.png)
+![Travis CI - Repository](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step4_rhu05u.png)
 
 **5.** Fill in the fields *NAME* with the value *GITHUB_TOKEN*, *VALUE* with the value of your token generated on GitHub and click on the button *Add*.
 
-![Travis CI - Settings](docs/images/travisci-step5.png)
+![Travis CI - Settings](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step5_h5ysms.png)
 
 **6.** Ready! Account created and repository configured.
 
-![Travis CI - Repository configured](docs/images/travisci-step6.png)
+![Travis CI - Repository configured](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722989/Blog/angular-travisci/travisci-step6_jyv3px.png)
 
 
 ### Create the Angular application
