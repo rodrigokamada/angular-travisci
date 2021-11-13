@@ -37,51 +37,51 @@ Before you start, you need to install and configure the tools:
 
 **1.** Let's create the account. Access the site [https://github.com/](https://github.com/) and click on the button *Sign up*.
 
-![GitHub - Initial page](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step1_wrlahc.png)
+![GitHub - Initial page](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step1.png)
 
 **2.** Fill in the fields *Username*, *Email address*, *Password*, click on the button *Verify* to solve the challenge and click on the button *Create account*.
 
-![GitHub - Sign up](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step2_ircgb5.png)
+![GitHub - Sign up](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step2.png)
 
 **3.** Let's generate the token that will be used in Travis CI. Click on the menu with the avatar and click on the menu *Settings*.
 
-![GitHub - Menu Settings](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step3_ubydrf.png)
+![GitHub - Menu Settings](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step3.png)
 
 **4.** Click on the menu *Developer settings*.
 
-![GitHub - Settings](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step4_qpegbx.png)
+![GitHub - Settings](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step4.png)
 
 **5.** Click on the menu *Personal access tokens*.
 
-![GitHub - Developer settings](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step5_ppsybd.png)
+![GitHub - Developer settings](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step5.png)
 
 **6.** Click on the button *Generate new token*.
 
-![GitHub - Personal access tokens](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step6_zf3yfv.png)
+![GitHub - Personal access tokens](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722986/Blog/angular-travisci/github-step6.png)
 
 **7.** Fill in the field *Note*, select the option *repo* and click on the button *Create token*.
 
-![GitHub - Generate new token](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step7_ppuewn.png)
+![GitHub - Generate new token](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step7.png)
 
 **8.** Copy the generated token and, in my case, the `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` token was generated because this token will be configured in Travis CI.
 
-![GitHub - Create token](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step8_ym5hoy.png)
+![GitHub - Create token](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step8.png)
 
 **9.** Let's create the repository. Click on the menu with the avatar and click on the menu *Your repositories*.
 
-![GitHub - Menu Your repositories](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step9_fbq2yd.png)
+![GitHub - Menu Your repositories](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step9.png)
 
 **10.** Click on the button *New*.
 
-![GitHub - New repository](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step10_hae9dv.png)
+![GitHub - New repository](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step10.png)
 
 **11.** Fill in the field *Repository bane* and click on the button *Create repository*.
 
-![GitHub - Create repository](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step11_iev4kz.png)
+![GitHub - Create repository](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722987/Blog/angular-travisci/github-step11.png)
 
 **12.** Ready! Account created, token generated and repository [`https://github.com/rodrigokamada/angular-travisci`](https://github.com/rodrigokamada/angular-travisci) created.
 
-![GitHub - Repository created](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/github-step12_trbwfa.png)
+![GitHub - Repository created](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/github-step12.png)
 
 
 ### Create and configure the account on the Travis CI
@@ -89,27 +89,27 @@ Before you start, you need to install and configure the tools:
 
 **1.** Let's create the account. Access the site [https://travis-ci.com/](https://travis-ci.com/) and click on the button *Sign up*.
 
-![Travis CI - Initial page](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step1_xgghwn.png)
+![Travis CI - Initial page](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step1.png)
 
 **2.** Click on the button *SIGN IN WITH GITHUB* to sign in with GitHub account.
 
-![Travis CI - Sign up](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step2_uymq31.png)
+![Travis CI - Sign up](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step2.png)
 
 **3.** If Travis CI requests permission to list the GitHub repositories, accept the request. Click on the repository link *angular-travisci*.
 
-![Travis CI - List repositories](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step3_rwt2jn.png)
+![Travis CI - List repositories](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step3.png)
 
 **4.** Let's set up the GitHub access token. Click on the menu *More options* and click on the menu *Settings*.
 
-![Travis CI - Repository](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step4_rhu05u.png)
+![Travis CI - Repository](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step4.png)
 
 **5.** Fill in the fields *NAME* with the value *GITHUB_TOKEN*, *VALUE* with the value of your token generated on GitHub and click on the button *Add*.
 
-![Travis CI - Settings](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step5_h5ysms.png)
+![Travis CI - Settings](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722988/Blog/angular-travisci/travisci-step5.png)
 
 **6.** Ready! Account created and repository configured.
 
-![Travis CI - Repository configured](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722989/Blog/angular-travisci/travisci-step6_jyv3px.png)
+![Travis CI - Repository configured](https://res.cloudinary.com/rodrigokamada/image/upload/v1636722989/Blog/angular-travisci/travisci-step6.png)
 
 
 ### Create the Angular application
@@ -251,20 +251,19 @@ Build at: 2021-06-07T00:23:57.046Z - Hash: 0ddc925fb2029ab1452c - Time: 8963ms
 npm run build:prod
 
 > angular-travisci@1.0.0 build:prod
-> ng build --prod --base-href https://rodrigokamada.github.io/angular-travisci/
+> ng build --configuration production --base-href https://rodrigokamada.github.io/angular-travisci/
 
-Option "--prod" is deprecated: No need to use this option as this builder defaults to configuration "production".
 ✔ Browser application bundle generation complete.
 ✔ Copying assets complete.
 ✔ Index html generation complete.
 
-Initial Chunk Files               | Names         |      Size
-main.4284c613df8796ad96ac.js      | main          | 185.26 kB
-polyfills.6e957dc8e1c39c9b7c1a.js | polyfills     |  36.21 kB
-runtime.fde742341677e42220b5.js   | runtime       |   1.04 kB
-styles.31d6cfe0d16ae931b73c.css   | styles        |   0 bytes
+Initial Chunk Files           | Names         |      Size
+main.c678fa8750e7c769.js      | main          | 177.63 kB
+polyfills.6d7801353e02e327.js | polyfills     |  36.21 kB
+runtime.b136bda8a38c4f2e.js   | runtime       |   1.06 kB
+styles.ef46db3751d8e999.css   | styles        |   0 bytes
 
-                                  | Initial Total | 222.50 kB
+                              | Initial Total | 214.90 kB
 
 Build at: 2021-09-05T22:42:19.525Z - Hash: 83bfffc079b083727ca4 - Time: 26030ms
 ```
