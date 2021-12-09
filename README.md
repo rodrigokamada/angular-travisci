@@ -1,13 +1,9 @@
 # Angular Travis CI
 
 
-Application example built with [Angular 13](https://angular.io/) and hosted on [GitHub Pages](https://pages.github.com/) using [Travis CI](https://www.travis-ci.com/).
+Application example built with [Angular](https://angular.io/) 13 and hosted on [GitHub Pages](https://pages.github.com/) using [Travis CI](https://www.travis-ci.com/).
 
 This tutorial was posted on my [blog](https://rodrigo.kamada.com.br/blog/hospedando-uma-aplicacao-angular-no-github-pages-usando-o-travis-ci) in portuguese and on the [DEV Community](https://dev.to/rodrigokamada/hosting-an-angular-application-on-github-pages-using-travis-ci-5dip) in english.
-
-Available in:
-
-* [GitHub Pages](https://rodrigokamada.github.io/angular-travisci/)
 
 
 
@@ -270,7 +266,7 @@ Build at: 2021-09-05T22:42:19.525Z - Hash: 83bfffc079b083727ca4 - Time: 26030ms
 
 **9.** Syncronize the application on the GitHub repository that was created.
 
-**10.** Ready! After synchronizing the application on the GitHub repository, Travis CI build the application and synchronize on the branch `gh-pages`. Access the URL `https://rodrigokamada.github.io/angular-travisci/` and check if the application is working. Replace the `rodrigokamada` value with your GitHub username.
+**10.** Ready! After synchronizing the application on the GitHub repository, Travis CI build the application and synchronize on the branch `gh-pages`. Access the URL [https://rodrigokamada.github.io/angular-travisci/](https://rodrigokamada.github.io/angular-travisci/) and check if the application is working. Replace the `rodrigokamada` value with your GitHub username.
 
 
 
