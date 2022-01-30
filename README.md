@@ -162,7 +162,7 @@ notifications:
 language: node_js
 
 node_js:
-  - 16
+  - 14
 
 before_script:
   - npm install
@@ -179,7 +179,7 @@ deploy:
   github_token: $GITHUB_TOKEN
   local_dir: dist/angular-travisci
   on:
-    branch: master
+    branch: main
 ```
 
 **4.** Change the `package.json` file and add the scripts below. Replace the `rodrigokamada` value with your GitHub username.
