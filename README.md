@@ -163,7 +163,7 @@ notifications:
 language: node_js
 
 node_js:
-  - 14
+  - 16
 
 before_script:
   - npm install
