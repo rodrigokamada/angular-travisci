@@ -15,7 +15,7 @@ script:
   - npm run test:headless
 
 before_deploy:
-  - npm run build:prod
+  - npm run build
 
 deploy:
   provider: pages

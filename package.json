@@ -9,8 +9,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --configuration production --base-href https://rodrigokamada.github.io/angular-travisci/",
-    "watch": "ng build --watch --configuration development",
+    "watch": "ng build --watch --configuration development --base-href https://rodrigokamada.github.io/angular-travisci/",
     "test": "ng test",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
   },
